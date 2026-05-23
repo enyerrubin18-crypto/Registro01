@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Estudiantil</title>
+    <link rel="stylesheet" href="miestilo2.css">
+</head>
+<body>
+
+    <form>
+        <h1 class="titulo">Registrar Datos</h1>
+        <div>
+            <label for="InputNombre">Nombre</label>
+            <input type="text" id="InputNombre">
+        </div>
+        
+        <div>
+            <label for="InputApellido">Apellido</label>
+            <input type="text" id="InputApellido">
+        </div>
+        
+        <div>
+            <label for="InputCedula">Cédula</label>
+            <input type="text" id="InputCedula">
+        </div>
+        
+        <button type="submit" id="BTNAgregar">Agregar</button>
+        <a href="primero.html" class="boton-enlace">Volver</a>
+    </form>
+
+    <br><br>
+
+    <table class="X" border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Cédula</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        
+        <tbody id="ContenidoTabla">
+            </tbody>
+    </table>
+
+    <script src="primerjs.js"></script>
+
+</body>
+</html>

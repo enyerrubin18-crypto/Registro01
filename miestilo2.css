@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+
+body {
+    background-color: #0b132b; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 20px;
+    gap: 20px; 
+}
+.titulo {
+  color: #0047AB; 
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 2.5rem; 
+  font-weight: 800; 
+  letter-spacing: -1px; 
+  margin-bottom: 25px;
+  text-align: center; 
+}
+.container {
+    background-color: #1c2541; 
+    max-width: 480px;
+    width: 100%;
+    padding: 30px 25px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid #000000; 
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px; 
+    background: #00d2ff; 
+    box-shadow: 0 2px 10px rgba(0, 210, 255, 0.5); 
+}
+
+
+form {
+    text-align: left; 
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #0b132b; 
+    border: 1px solid #000000; 
+    border-radius: 8px;
+    color: #ffffff; 
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #00d2ff;
+    box-shadow: 0 0 5px rgba(0, 210, 255, 0.3);
+}
+
+
+button {
+    width: 100%; 
+    background-color: #00d2ff; 
+    color: #0b132b; 
+    border: none;
+    padding: 12px 30px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+.boton-enlace {
+    
+  display: inline-block; 
+  box-sizing: border-box;
+  text-decoration: none; 
+  text-align: center;
+  width: 100%; 
+  background-color: #00d2ff; 
+  color: #0b132b; 
+  border: none;
+  padding: 12px 30px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 5px;
+}
+
+
+.boton-enlace:hover {
+  background-color: #00b8e6; 
+}
+button:hover {
+    background-color: #ffffff; 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+}
+
+table.X {
+    max-width: 480px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0b132b; 
+    border: 2px solid #000000; 
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+table.X th {
+    background-color: #00d2ff; 
+    color: #0b132b; 
+    font-weight: 700;
+    padding: 12px 8px;
+    font-size: 0.85rem;
+    border: 1px solid #000000;
+}
+
+
+table.X td {
+    color: rgba(255, 255, 255, 0.9); 
+    padding: 12px 8px;
+    font-size: 0.85rem;
+    text-align: center;
+    border: 1px solid #000000; 
+}
+
+
+table.X button {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    background-color: #ff4d4d; 
+    color: #ffffff;
+    border-radius: 6px;
+    margin-top: 0;
+}
+
+table.X button:hover {
+    background-color: #ffffff;
+    color: #ff4d4d;
+    box-shadow: 0 3px 8px rgba(255, 77, 77, 0.4);
+}
